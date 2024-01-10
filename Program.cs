@@ -6,19 +6,19 @@ using System.Threading.Tasks;
 
 namespace Lab1
 {
-    /*
-     * Laboratory 1: Program to calculate:
-     *               a) Growth level of stock 
-     *               b) Projected market value for the investment 
-     *               
-     * Growth level of stock estimated based on (Inputs by user):
-     * 1. Projected interest rate level - high, medium, low 
-     * 2. Projected growth level of the stock - high, medium, low  
-     * 3. Most recent dividend - integer greater than cero and less than 100 
-     * 4. Number of shares - interger treater than cero 
-     */
     internal class Program
     {
+         /// <summary>
+         /// Laboratory 1: Program to calculate:
+         ///               a) Growth level of stock 
+         ///               b) Projected market value for the investment 
+         ///               
+         /// Growth level of stock estimated based on (Inputs by user):
+         /// 1. Projected interest rate level - high, medium, low 
+         /// 2. Projected growth level of the stock - high, medium, low  
+         /// 3. Most recent dividend - integer greater than cero and less than 100 
+         /// 4. Number of shares - interger treater than cero 
+         /// </summary>
         static void Main(string[] args)
         {
             //Adding titles of company and program
@@ -82,8 +82,8 @@ namespace Lab1
             //Printing the estimated values
             Console.WriteLine("\nProjected values");
             Console.WriteLine("----------------------------");
-            Console.WriteLine("Value of stock : ${0:#,##0.00}", valueStock);
-            Console.WriteLine("Market value   : ${0:#,##0.00}", marketValue);
+            Console.WriteLine("Value of stock : $ {0:#,##0.00}", valueStock);
+            Console.WriteLine("Market value   : $ {0:#,##0.00}", marketValue);
             Console.ReadKey();
         }
 
